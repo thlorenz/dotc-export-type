@@ -1,4 +1,4 @@
-typedef struct Result {
+typedef struct {
   int input;
   int output;
 } Result;
@@ -13,6 +13,8 @@ Result bazzy (int n) {
   return res;
 }
 
+#ifdef DOTC
 #export Result
 #export foo
 #export bazzy as bar
+#endif
