@@ -1,20 +1,18 @@
 typedef struct {
   int input;
   int output;
-} Result;
+} FB_Result;
 
-Result foo (int n) {
+#define Result FB_Result
+
+Result FB_foo (int n) {
   Result res = { n, n * 111};
   return res;
 }
 
-Result bazzy (int n) {
-  Result res = { n, n * 10 };
+Result FB_bar (int n) {
+  FB_Result res = { n, n * 10 };
   return res;
 }
 
-#ifdef DOTC
-#export Result
-#export foo
-#export bazzy as bar
-#endif
+#undef Result
