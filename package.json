@@ -4,8 +4,7 @@
   "description": "Demonstrating that types can also be exported via dotc pre-processor.",
   "main": "index.js",
   "scripts": {
-    "start": "dotc pre main.c | gcc -x c++ - -o main && ./main 1 2",
-    "dotc": "dotc pre main.c > main-dot.cc"
+    "start": "gcc foobar.c main.c -o main && ./main 1 2"
   },
   "repository": {
     "type": "git",
@@ -14,7 +13,6 @@
   "homepage": "https://github.com/thlorenz/dotc-export-type",
   "dependencies": {},
   "devDependencies": {
-    "dotc": "~0.3.2"
   },
   "keywords": [],
   "author": {

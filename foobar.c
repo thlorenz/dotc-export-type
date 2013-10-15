@@ -1,18 +1,15 @@
-typedef struct {
-  int input;
-  int output;
-} FB_Result;
+#include "foobar.h"
 
-#define Result FB_Result
+static int mult(a, b) {
+  return a * b;
+}
 
-Result FB_foo (int n) {
-  Result res = { n, n * 111};
+FB_Result FB_foo (int n) {
+  FB_Result res = { n, mult(n, 111) };
   return res;
 }
 
-Result FB_bar (int n) {
-  FB_Result res = { n, n * 10 };
+FB_Result FB_bar (int n) {
+  FB_Result res = { n, mult(n, 10) };
   return res;
 }
-
-#undef Result

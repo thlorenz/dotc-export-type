@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-#include "./foobar.c"
+#include "./foobar.h"
 
 int main(int argc, char **argv) {
   FB_Result f = FB_foo(atoi(argv[1])); FB_Result b = FB_bar(atoi(argv[2]));
