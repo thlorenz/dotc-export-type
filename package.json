@@ -4,7 +4,8 @@
   "description": "Demonstrating that types can also be exported via dotc pre-processor.",
   "main": "index.js",
   "scripts": {
-    "start": "dotc pre main.c | gcc -x c++ - -o main && ./main 1 2"
+    "start": "dotc pre main.c | gcc -x c++ - -o main && ./main 1 2",
+    "dotc": "dotc pre main.c > main-dot.cc"
   },
   "repository": {
     "type": "git",

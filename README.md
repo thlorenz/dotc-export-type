@@ -2,19 +2,17 @@
 
 Demonstrating that types can also be exported via dotc pre-processor.
 
-```js
-// TODO
+## Build an run
+
+```
+npm start
 ```
 
-## Status
+## Run dotc only to inspect `main-dot.cc` 
 
-Nix, Nada, Nichevo, Nothing --> go away!
-## Installation
-
-    npm install dotc-export-type
-
-## API
-
+```
+npm run dotc
+```
 
 ## License
 
